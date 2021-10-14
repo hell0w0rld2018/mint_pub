@@ -11,15 +11,14 @@
 - solana上所有基于candy machine作为mint工具的项目都可使用。
 - 目前绝大部分项目都是基于candy machine，也有一些例外，例如Solarmy 2D&3D使用了raydium的drop zone（抽奖性质），RogueSharkTank使用了fair launch（也是抽奖性质），甚至还有些是项目方手动mint再分发的。
 
-## 使用价格
+## 使用费用
 - 每成功mint一个nft，按照nft的价格和手续费比例收取报酬。mint失败不支付费用。例如nft的mint价格为1 sol，手续费为10%，mint成功后会自动转账给作者0.1 sol。
 - 请保证钱包余额大于mint的金额+solana手续费+作者报酬。
 - 第一版手续费为10%，后续可能会调整。同时后续会推出高性能版本（目前版本控制了速度），支付更高比例的手续费可以使用。手续费在程序运行时可以看到。
-- 如果使用作者找到的candy machine链上地址，可能会额外加一些手续费。也鼓励大家自行寻找链上地址，相互多交流，共同学习进步。注意：请一定要确认链上地址为正确地址，否则可能导致损失！！！
 
 ## 快速开始
 - 私钥复制到key.txt
-- config.ini里配置好candy_machine
+- config.ini里配置好candy_machine地址
 - 启动mint_pub.exe，输入数量，输入y开始mint
 - 结束
 
